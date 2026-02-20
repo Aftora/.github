@@ -1,88 +1,98 @@
-<img src="https://github.com/Cascade-Panel/.github/blob/main/profile%2Fbanner.png" alt="Cascade Banner" style="width:100%;height:auto;">
+<img src="https://github.com/Cascade-Panel/.github/blob/main/profile%2FScreenshot_20260220-041529.png" alt="Aftora Systems Banner" style="width:100%;height:auto;">
 
-# Cascade Organization
+# Aftora Systems
 
-Cascade is a platform organization building operational software across infrastructure orchestration and workforce management. The projects in this organization are designed with clear separation of responsibilities, secure-by-default architecture, and production-grade reliability.
+Aftora Systems builds and operates operational software platforms across infrastructure orchestration and workforce management.
 
----
-
-## Product Architecture
-
-Cascade is composed of distinct products that integrate through well-defined boundaries:
-
-- Infrastructure orchestration is split between a centralized control plane and a licensed node runtime.
-- Workforce operations are managed through a dedicated full-stack platform for scheduling and payroll.
-
-This structure keeps execution isolated to the edge (nodes) where appropriate, while maintaining centralized orchestration, billing, and governance.
+The organization focuses on clear system boundaries, secure-by-default architecture, and scalable, production-grade reliability.
 
 ---
 
-## Core Projects
+## Platform Structure
+
+Aftora Systems develops and maintains independent product platforms that integrate through well-defined interfaces.
+
+Current product lines:
+
+- **Cascade** — Distributed infrastructure orchestration
+- **Cadence** — Workforce and operational management
+
+Each platform is designed with separation of concerns, minimal cross-dependency, and long-term operational scalability.
+
+---
+
+## Cascade
+
+Cascade is the distributed infrastructure platform developed by Aftora Systems.
+
+It combines centralized orchestration with licensed node-level execution to manage:
+
+- VPS environments
+- Game servers
+- Application hosting
+- Database services
+- Proxy and domain infrastructure
+
+Cascade consists of two primary components:
 
 ### Conduit
 
-Conduit is the control plane for the Cascade infrastructure platform. It coordinates licensed nodes, exposes the API surface used by the dashboard and integrations, and manages orchestration logic and system-wide state.
+The control plane responsible for orchestration, licensing, API surfaces, and system-wide coordination.
 
-Responsibilities include:
-
-- Node registration and license validation
-- Workload orchestration and lifecycle management
-- Proxy and domain configuration delegation
-- API surface for UI and automation integrations
-
-Repository: https://github.com/Cascade-Panel/Conduit
-
----
+Repository:  
+https://github.com/Cascade-Panel/Conduit
 
 ### Cascadia
 
-Cascadia is the licensed node runtime daemon written in Rust. It executes infrastructure workloads locally on nodes and performs system-level operations delegated by Conduit.
+The Rust-based licensed node runtime responsible for local workload execution and infrastructure operations.
 
-Responsibilities include:
-
-- VPS lifecycle management
-- Game server provisioning and supervision
-- Web and application hosting workloads
-- Database host operations
-- Proxy and domain execution
-- Secure communication with the control plane
-
-Repository: https://github.com/Cascade-Panel/Cascadia
+Repository:  
+https://github.com/Cascade-Panel/Cascadia
 
 ---
 
-### Cadence
+## Cadence
 
-Cadence is the workforce management platform within the Cascade ecosystem. It provides scheduling, time tracking, PTO workflows, payroll automation, and internal communications through a Sanic API and React dashboard.
+Cadence is the workforce management platform within Aftora Systems.
 
-Responsibilities include:
+It provides:
 
 - Employee management and role-based permissions
-- Shift scheduling with recurring patterns and cover workflows
-- Clock-in/out with overtime rules and automated safeguards
-- PTO approvals and reassignment tools
-- Payroll automation with audit logging
+- Shift scheduling and recurring rota systems
+- Clock-in/out workflows with overtime logic
+- PTO request and approval processes
+- Payroll automation and audit logging
+- Internal operational communication tools
 
-Repository: https://github.com/Cascade-Panel/Cadence
+Cadence is built as a full-stack platform combining a Sanic API with a React dashboard.
 
----
-
-## Design Principles
-
-- Separation between orchestration and execution
-- Secure-by-default communication and authentication
-- Minimal central runtime responsibility where possible
-- Auditability for privileged actions and financial workflows
-- Scalability across distributed deployments
+Repository:  
+https://github.com/Cascade-Panel/Cadence
 
 ---
 
-## Contributing
+## Engineering Principles
 
-Contributions are reviewed per repository. See each project’s README for setup instructions and contribution guidelines.
+Aftora Systems builds platforms according to the following principles:
+
+- Clear separation between orchestration and execution
+- Secure communication and authentication by default
+- License-based runtime validation where appropriate
+- Auditability for privileged and financial operations
+- Horizontal scalability across distributed deployments
+- Long-term maintainability over short-term complexity
 
 ---
 
-## License
+## Contribution
 
-Licensing varies by repository. Refer to each project’s LICENSE file for the applicable terms.
+Each repository contains its own documentation and contribution guidelines.
+
+Changes are reviewed per project and must align with platform architecture and security standards.
+
+---
+
+## Licensing
+
+Licensing varies by repository.  
+Refer to the LICENSE file in each project for applicable terms.
