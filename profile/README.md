@@ -1,49 +1,88 @@
-<img src="https://github.com/Cascade-Panel/.github/blob/main/profile%2Fbanner.png" alt="Description" style="width:100%;height:auto;">
+<img src="https://github.com/Cascade-Panel/.github/blob/main/profile%2Fbanner.png" alt="Cascade Banner" style="width:100%;height:auto;">
 
-Welcome to the **Cascade Organization**! We are dedicated to creating and maintaining powerful tools for managing and orchestrating containerized and virtualized environments. Our flagship projects include the Cascade Panel and Cascade CLI, designed to provide users with comprehensive solutions for managing their infrastructure.
+# Cascade Organization
 
-## Projects
+Cascade is a distributed infrastructure platform focused on orchestrating licensed node runtimes at scale. The organization maintains the core components powering the Cascade ecosystem, including the control plane and node runtime responsible for managing VPS environments, game servers, application workloads, databases, and networking infrastructure.
 
-### Cascade Panel
+Cascade is designed around a strict separation between orchestration and execution, enabling scalable, secure, and modular infrastructure deployments.
 
-**Cascade Panel** is an advanced web-based platform for managing Incus instances. It offers a unified dashboard for handling application containers, system containers, and virtual machines (VMs). Key features include:
+---
 
-- **Unified Dashboard**: Manage all your containers and VMs from a single interface.
-- **Configurable API**: Run and manage multiple API versions concurrently.
-- **Plan Management**: Purchase and manage access to various features and instances.
-- **JWT Cookie-Based API**: Secure communication between the backend and the web UI.
-- **Flexible Database Options**: Supports any database compatible with SQLAlchemy.
-- **Customizable Caching Storage**: Options include memcached, Redis, SQLite3, or a custom system.
+## Platform Architecture
 
-### Cascade CLI
+Cascade is composed of two primary components:
 
-**Cascade CLI** is a command-line interface tool designed to complement the Cascade Panel. It allows users to interact with Cascade services directly from the terminal, providing automation and scripting capabilities for managing their infrastructure. Key features include:
+Control Plane  
+→ Secure API / WebSocket  
+→ Licensed Node Runtime  
+→ Local Infrastructure Execution  
 
-- **Command-Line Management**: Access and control your Cascade services from the terminal.
-- **Automation**: Integrate with scripts and automation tools for seamless operations.
-- **Comprehensive CLI Options**: Manage instances, containers, and other features directly from the command line.
+The control plane coordinates workloads and system state.  
+The node runtime executes infrastructure operations locally.
 
-## Getting Started
+This separation ensures fault isolation, horizontal scalability, and minimal centralized execution risk.
 
-To get started with our projects, please visit the individual repositories for detailed instructions and documentation:
+---
 
-- **Cascade Panel**: [Cascade Panel Repository](https://github.com/Cascade-Panel/Cascade)
-- **Cascade CLI**: [Cascade CLI Repository](https://github.com/Cascade-Panel/Cascade-CLI)
+## Core Projects
 
-## Contributing
+### Conduit
 
-We welcome contributions from the community! If you're interested in contributing to our projects, please refer to the contribution guidelines in each repository's [CONTRIBUTING.md](https://github.com/Cascade-Panel/Cascade/blob/main/CONTRIBUTING.md) file.
+Conduit is the Cascade control plane.
 
-## Support
+It provides:
 
-For any questions, support requests, or issues, please open an issue on the relevant project repository. We appreciate your feedback and are here to help!
+- Node registration and license validation  
+- Infrastructure orchestration  
+- Workload lifecycle management  
+- API surface for frontend and automation integrations  
+- Proxy and domain configuration delegation  
+- System-wide state modeling  
+
+Conduit does not directly execute infrastructure workloads. All runtime operations are delegated to licensed nodes.
+
+Repository:  
+https://github.com/Cascade-Panel/Conduit
+
+---
+
+### Cascadia
+
+Cascadia is the licensed node runtime daemon written in Rust.
+
+It is responsible for:
+
+- VPS lifecycle management  
+- Game server provisioning and supervision  
+- Web application deployment  
+- Database host management  
+- Reverse proxy and domain execution  
+- Secure communication with the control plane  
+
+Cascadia executes all infrastructure operations locally while maintaining authenticated communication with Conduit.
+
+Repository:  
+https://github.com/Cascade-Panel/Cascadia
+
+---
+
+## Design Principles
+
+- Clear separation between control and execution  
+- Node-first runtime authority  
+- Minimal control-plane data retention  
+- Secure-by-default communication  
+- Horizontally scalable architecture  
+- Performance-focused engineering  
+
+---
+
+## Contribution
+
+Contributions are reviewed per repository. Please refer to the individual project documentation for setup instructions and contribution guidelines.
+
+---
 
 ## License
 
-All projects under the Cascade Organization are licensed under the MIT License. See the [LICENSE](https://github.com/Cascade-Panel/Cascade/blob/main/LICENSE) files in each repository for details.
-
-## Contact
-
-Stay connected with us for updates, announcements, and discussions:
-
-- **GitHub**: [Cascade Organization](https://github.com/Cascade-Panel)
+Unless otherwise specified, projects within the Cascade Organization are proprietary and licensed for use within the Cascade ecosystem.
