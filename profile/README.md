@@ -2,25 +2,18 @@
 
 # Cascade Organization
 
-Cascade is a distributed infrastructure platform focused on orchestrating licensed node runtimes at scale. The organization maintains the core components powering the Cascade ecosystem, including the control plane and node runtime responsible for managing VPS environments, game servers, application workloads, databases, and networking infrastructure.
-
-Cascade is designed around a strict separation between orchestration and execution, enabling scalable, secure, and modular infrastructure deployments.
+Cascade is a platform organization building operational software across infrastructure orchestration and workforce management. The projects in this organization are designed with clear separation of responsibilities, secure-by-default architecture, and production-grade reliability.
 
 ---
 
-## Platform Architecture
+## Product Architecture
 
-Cascade is composed of two primary components:
+Cascade is composed of distinct products that integrate through well-defined boundaries:
 
-Control Plane  
-→ Secure API / WebSocket  
-→ Licensed Node Runtime  
-→ Local Infrastructure Execution  
+- Infrastructure orchestration is split between a centralized control plane and a licensed node runtime.
+- Workforce operations are managed through a dedicated full-stack platform for scheduling and payroll.
 
-The control plane coordinates workloads and system state.  
-The node runtime executes infrastructure operations locally.
-
-This separation ensures fault isolation, horizontal scalability, and minimal centralized execution risk.
+This structure keeps execution isolated to the edge (nodes) where appropriate, while maintaining centralized orchestration, billing, and governance.
 
 ---
 
@@ -28,61 +21,68 @@ This separation ensures fault isolation, horizontal scalability, and minimal cen
 
 ### Conduit
 
-Conduit is the Cascade control plane.
+Conduit is the control plane for the Cascade infrastructure platform. It coordinates licensed nodes, exposes the API surface used by the dashboard and integrations, and manages orchestration logic and system-wide state.
 
-It provides:
+Responsibilities include:
 
-- Node registration and license validation  
-- Infrastructure orchestration  
-- Workload lifecycle management  
-- API surface for frontend and automation integrations  
-- Proxy and domain configuration delegation  
-- System-wide state modeling  
+- Node registration and license validation
+- Workload orchestration and lifecycle management
+- Proxy and domain configuration delegation
+- API surface for UI and automation integrations
 
-Conduit does not directly execute infrastructure workloads. All runtime operations are delegated to licensed nodes.
-
-Repository:  
-https://github.com/Cascade-Panel/Conduit
+Repository: https://github.com/Cascade-Panel/Conduit
 
 ---
 
 ### Cascadia
 
-Cascadia is the licensed node runtime daemon written in Rust.
+Cascadia is the licensed node runtime daemon written in Rust. It executes infrastructure workloads locally on nodes and performs system-level operations delegated by Conduit.
 
-It is responsible for:
+Responsibilities include:
 
-- VPS lifecycle management  
-- Game server provisioning and supervision  
-- Web application deployment  
-- Database host management  
-- Reverse proxy and domain execution  
-- Secure communication with the control plane  
+- VPS lifecycle management
+- Game server provisioning and supervision
+- Web and application hosting workloads
+- Database host operations
+- Proxy and domain execution
+- Secure communication with the control plane
 
-Cascadia executes all infrastructure operations locally while maintaining authenticated communication with Conduit.
+Repository: https://github.com/Cascade-Panel/Cascadia
 
-Repository:  
-https://github.com/Cascade-Panel/Cascadia
+---
+
+### Cadence
+
+Cadence is the workforce management platform within the Cascade ecosystem. It provides scheduling, time tracking, PTO workflows, payroll automation, and internal communications through a Sanic API and React dashboard.
+
+Responsibilities include:
+
+- Employee management and role-based permissions
+- Shift scheduling with recurring patterns and cover workflows
+- Clock-in/out with overtime rules and automated safeguards
+- PTO approvals and reassignment tools
+- Payroll automation with audit logging
+
+Repository: https://github.com/Cascade-Panel/Cadence
 
 ---
 
 ## Design Principles
 
-- Clear separation between control and execution  
-- Node-first runtime authority  
-- Minimal control-plane data retention  
-- Secure-by-default communication  
-- Horizontally scalable architecture  
-- Performance-focused engineering  
+- Separation between orchestration and execution
+- Secure-by-default communication and authentication
+- Minimal central runtime responsibility where possible
+- Auditability for privileged actions and financial workflows
+- Scalability across distributed deployments
 
 ---
 
-## Contribution
+## Contributing
 
-Contributions are reviewed per repository. Please refer to the individual project documentation for setup instructions and contribution guidelines.
+Contributions are reviewed per repository. See each project’s README for setup instructions and contribution guidelines.
 
 ---
 
 ## License
 
-Unless otherwise specified, projects within the Cascade Organization are proprietary and licensed for use within the Cascade ecosystem.
+Licensing varies by repository. Refer to each project’s LICENSE file for the applicable terms.
