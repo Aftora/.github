@@ -1,4 +1,4 @@
-<img src="https://github.com/Cascade-Panel/.github/blob/main/profile%2FScreenshot_20260220-041529.png" alt="Aftora Systems Banner" style="width:100%;height:auto;">
+<img src="https://raw.githubusercontent.com/Cascade-Panel/.github/main/profile/aftora-banner.svg" alt="Aftora Systems" width="100%">
 
 # Aftora Systems
 
@@ -12,10 +12,10 @@ The organization focuses on clear system boundaries, secure-by-default architect
 
 Aftora Systems develops and maintains independent product platforms that integrate through well-defined interfaces.
 
-Current product lines:
-
-- **Cascade** — Distributed infrastructure orchestration
-- **Cadence** — Workforce and operational management
+| Platform | Description |
+|----------|-------------|
+| [**Cascade**](#cascade) | Distributed infrastructure orchestration |
+| [**Cadence**](#cadence) | Workforce and operational management |
 
 Each platform is designed with separation of concerns, minimal cross-dependency, and long-term operational scalability.
 
@@ -39,15 +39,13 @@ Cascade consists of two primary components:
 
 The control plane responsible for orchestration, licensing, API surfaces, and system-wide coordination.
 
-Repository:  
-https://github.com/Cascade-Panel/Conduit
+→ [`Cascade-Panel/Conduit`](https://github.com/Cascade-Panel/Conduit)
 
 ### Cascadia
 
 The Rust-based licensed node runtime responsible for local workload execution and infrastructure operations.
 
-Repository:  
-https://github.com/Cascade-Panel/Cascadia
+→ [`Cascade-Panel/Cascadia`](https://github.com/Cascade-Panel/Cascadia)
 
 ---
 
@@ -66,8 +64,7 @@ It provides:
 
 Cadence is built as a full-stack platform combining a Sanic API with a React dashboard.
 
-Repository:  
-https://github.com/Cascade-Panel/Cadence
+→ [`Cascade-Panel/Cadence`](https://github.com/Cascade-Panel/Cadence)
 
 ---
 
@@ -94,5 +91,4 @@ Changes are reviewed per project and must align with platform architecture and s
 
 ## Licensing
 
-Licensing varies by repository.  
-Refer to the LICENSE file in each project for applicable terms.
+Licensing varies by repository. Refer to the `LICENSE` file in each project for applicable terms.
