@@ -80,6 +80,45 @@ Aftora Systems builds platforms according to the following principles:
 - Long-term maintainability over short-term complexity
 
 ---
+## 
+flowchart TD
+
+    %% User Layer
+    User[Company Admins / Staff]
+
+    %% Console
+    Summit[Aftora Summit<br/>Customer Console]
+
+    %% Identity
+    Headwaters[Headwaters<br/>Aftora Identity Authority]
+
+    %% Orchestration
+    Fabric[Aftora Fabric<br/>Orchestration Layer]
+
+    %% Products
+    Cascade[Cascade<br/>]
+    Cadence[Cadence<br/>]
+    Future[Future Products]
+
+    %% Flow
+    User --> Summit
+    Summit -->|OIDC / SSO| Headwaters
+    Summit -->|Authorized Control Requests| Fabric
+    Fabric --> Cascade
+    Fabric --> Cadence
+    Fabric --> Future
+
+    %% Styling
+    classDef core fill:#1f2937,color:#fff,stroke:#111827;
+    classDef control fill:#111827,color:#fff,stroke:#000;
+    classDef product fill:#374151,color:#fff,stroke:#1f2937;
+    classDef execution fill:#4b5563,color:#fff,stroke:#1f2937;
+
+    class Summit core;
+    class Headwaters core;
+    class Fabric control;
+    class Cascade,Cadence,Future product;
+---
 
 ## Contribution
 
