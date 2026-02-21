@@ -81,6 +81,7 @@ Aftora Systems builds platforms according to the following principles:
 
 ---
 ## 
+```mermaid
 flowchart TD
 
     %% User Layer
@@ -118,6 +119,7 @@ flowchart TD
     class Headwaters core;
     class Fabric control;
     class Cascade,Cadence,Future product;
+```
 ---
 
 ## Contribution
