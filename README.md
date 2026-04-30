@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./profile/aftora-header.png" alt="Aftora" width="100%" />
+  <img src="./assets/aftora-header.png" alt="Aftora" width="100%" />
 </p>
 
 <br />
