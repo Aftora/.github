@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="./assets/aftora-header.png" alt="Aftora" width="100%" />
+  <img src="../assets/aftora-header.png" alt="Aftora" width="100%" />
 </p>
 
-<br />
+<p align="center">
+  Aftora is a systems company.
+</p>
 
-```txt
-Aftora is a systems company.
-
-Products, people, and progress.
-```
+<p align="center">
+  Products, people, and progress.
+</p>
 
 <p align="center">
   <a href="https://aftora.io">aftora.io</a>
