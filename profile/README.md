@@ -1,13 +1,19 @@
-# Aftora Systems
+<p align="center">
+  <img src="../assets/aftora-header.png" alt="Aftora" width="100%" />
+</p>
 
-## Contribution
+<p align="center">
+  Aftora is a systems company.
+</p>
 
-Each repository contains its own documentation and contribution guidelines.
+<p align="center">
+  Products, people, and progress.
+</p>
 
-Changes are reviewed per project and must align with platform architecture and security standards.
-
----
-
-## Licensing
-
-Licensing varies by repository. Refer to the `LICENSE` file in each project for applicable terms.
+<p align="center">
+  <a href="https://aftora.io">aftora.io</a>
+  ·
+  <a href="https://github.com/UseCascadeIo">@UseCascadeIo</a>
+  ·
+  <a href="mailto:hello@aftora.io">hello@aftora.io</a>
+</p>
