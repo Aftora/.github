@@ -20,4 +20,3 @@
   ·
   <a href="mailto:hello@aftora.io">hello@aftora.io</a>
 </p>
-<img src="https://i.ibb.co/jkLVCWrK/12349-removebg-preview-1.png" height="0px" width="0px">
