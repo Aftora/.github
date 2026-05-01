@@ -7,7 +7,8 @@
   </picture>
   <h3 align="center">Products, people, and progress.</h3>
 </p>
-<h2></h2>
+<!-- Replace your <h2></h2> with this -->
+<div align="center" style="border-top: 1px solid #30363d; height: 1px; width: 100%;"></div>
 <p align="center">
   Aftora builds and presents the products, writing, and company work behind a growing infrastructure and digital systems portfolio.
 </p>
@@ -19,5 +20,3 @@
   ·
   <a href="mailto:hello@aftora.io">hello@aftora.io</a>
 </p>
-<!-- Replace your <h2></h2> with this -->
-<div align="center" style="border-top: 1px solid #30363d; height: 1px; width: 100%;"></div>
