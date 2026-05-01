@@ -9,7 +9,7 @@
 </p>
 <h2></h2>
 <p align="center">
-  Infrastructure, systems, and company work in progress.
+  Aftora builds and presents the products, writing, and company work behind a growing infrastructure and digital systems portfolio.
 </p>
 <h2></h2>
 <p align="center">
