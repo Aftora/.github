@@ -20,4 +20,4 @@
   ·
   <a href="mailto:hello@aftora.io">hello@aftora.io</a>
 </p>
-<p>&nbsp;</p>
+<table width="100%"><tr><td height="20px"></td></tr></table>
