@@ -7,8 +7,7 @@
   </picture>
 </p>
 
-<h3 align="center">Products, people, and progress.</h3>
-<h1/>
+<h1 align="center">Products, people, and progress.</h1>
 
 <p align="center">
   Infrastructure, systems, and company work in progress.
