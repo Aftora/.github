@@ -7,7 +7,7 @@
   </picture>
 </p>
 
----
+--
 
 <h3 align="center">Products, people, and progress.</h3>
 
