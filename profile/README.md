@@ -19,3 +19,5 @@
   ·
   <a href="mailto:hello@aftora.io">hello@aftora.io</a>
 </p>
+<!-- Replace your <h2></h2> with this -->
+<div align="center" style="border-top: 1px solid #30363d; height: 1px; width: 100%;"></div>
