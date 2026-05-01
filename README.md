@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/aftora-header.png" alt="Aftora" width="100%" />
-</p>
-
-<p align="center">
-  Aftora is a systems company.
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/aftora-wordmark-light.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/aftora-wordmark-dark.png">
+    <img alt="Aftora" src="../assets/aftora-wordmark-dark.png" width="420">
+  </picture>
 </p>
 
 <p align="center">
