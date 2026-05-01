@@ -5,6 +5,7 @@
     <img alt="Aftora" src="https://raw.githubusercontent.com/Aftora/.github/refs/heads/main/assets/aftora-wordmark-dark.png" width="220">
   </picture>
 </p>
+
 ---
 
 <h3 align="center">Products, people, and progress.</h3>
