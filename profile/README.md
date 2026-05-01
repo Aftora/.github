@@ -20,6 +20,4 @@
   ·
   <a href="mailto:hello@aftora.io">hello@aftora.io</a>
 </p>
-<p align="center">
-  <svg width="1" height="18" viewBox="0 0 1 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
-</p>
+
