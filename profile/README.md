@@ -7,7 +7,7 @@
   </picture>
   <h3 align="center">Products, people, and progress.</h3>
 </p>
-<table width="100%"><tr><td></td></tr></table>
+<details><summary></summary></details>
 <p align="center">
   Aftora builds and presents the products, writing, and company work behind a growing infrastructure and digital systems portfolio.
 </p>
