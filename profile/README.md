@@ -1,3 +1,4 @@
+<br>
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aftora/.github/refs/heads/main/assets/aftora-wordmark-light.png">
