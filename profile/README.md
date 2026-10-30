@@ -1,23 +1,15 @@
-<br>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aftora/.github/refs/heads/main/assets/aftora-wordmark-light.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aftora/.github/refs/heads/main/assets/aftora-wordmark-dark.png">
-    <img alt="Aftora" src="https://raw.githubusercontent.com/Aftora/.github/refs/heads/main/assets/aftora-wordmark-dark.png" width="220">
-  </picture>
-  <h3 align="center">Products, people, and progress.</h3>
-</p>
-<h1></h1>
-<p align="center">
-<br>
-  Aftora builds and presents the products, writing, and company work behind a growing infrastructure and digital systems portfolio.
-</p>
-<h2></h2>
-<p align="center">
-  <a href="https://aftora.io">aftora.io</a>
-  ·
-  <a href="https://github.com/UseCascadeIo">@UseCascadeIo</a>
-  ·
-  <a href="mailto:hello@aftora.io">hello@aftora.io</a>
-</p>
+# Aftora
 
+Aftora is my independent software development practice. I'm Leo Johnston, and I run it on a self-employed basis.
+
+I take on freelance development work alongside my own engineering projects.
+
+One completed client project is the website for [Local Social Value](https://localsocialvalue.co.uk).
+
+I'm currently working on document software.
+
+[domOXML](https://github.com/Daftscientist/domOXML) is an open-source project exploring HTML and CSS conversion into editable PowerPoint documents. AftDeck will be its future name.
+
+I'm also developing Author, an unreleased application that currently handles the.aftdoc format.
+
+I build and maintain self-hosted infrastructure as part of my work.
